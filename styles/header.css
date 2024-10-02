@@ -1,0 +1,17 @@
+.header__usuario {
+  padding: 2.6em 10em 1.8em 1em;
+  display: flex;
+  align-items: center;
+  gap: 1.3em;
+}
+
+.boas-vindas__usuario {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.quantidade__consultas {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--cinza-texto-detalhe);
+}

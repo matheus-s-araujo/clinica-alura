@@ -1,0 +1,22 @@
+@import url(styles/header.css);
+@import url(styles/hoje.css);
+
+:root {
+  --amarelo-botao: #ffb050;
+  --azul-bota: #4894ff;
+  --preto-texto-destaque: #464646;
+  --cinza-texto-detalhe: #a3a3a3;
+  --branco-tela-fundo: #ececec;
+  --branco-tela-consulta: #ffffff;
+  --fonte-padrao: "Montserrat";
+}
+
+body {
+  background-color: var(--branco-tela-fundo);
+  font-family: var(--fonte-padrao);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--preto-texto-destaque);
+}
+
+

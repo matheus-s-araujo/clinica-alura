@@ -1,0 +1,50 @@
+.container__hoje {
+  padding: 0.7em 1.3em 0.7em 1.3em;
+}
+
+.hoje {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.consultas__hoje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.consulta-info {
+  width: 100%;
+  margin-top: 0.6em;
+  padding: 1.3em 0;
+  background-color: var(--branco-tela-consulta);
+  border-radius: 0.7em;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  margin: 0.9em 0 0.6em 0;
+}
+
+.consulta-info__paciente {
+  margin: 0 1.3em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nome__paciente {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tipo-consulta__texto {
+  font-weight: 400;
+  color: var(--cinza-texto-detalhe);
+}
+
+.consulta-info__atendimento {
+  margin: 0 1.3em;
+}
