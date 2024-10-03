@@ -1,9 +1,9 @@
 @import url(styles/header.css);
-@import url(styles/hoje.css);
+@import url(styles/consultas.css);
 
 :root {
   --amarelo-botao: #ffb050;
-  --azul-bota: #4894ff;
+  --azul-botao: #4894ff;
   --preto-texto-destaque: #464646;
   --cinza-texto-detalhe: #a3a3a3;
   --branco-tela-fundo: #ececec;

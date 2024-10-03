@@ -1,0 +1,110 @@
+.container__hoje {
+  padding: 0.7em 1.3em 0.7em 1.3em;
+}
+
+.hoje {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0.8em;
+}
+
+.consultas__hoje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.consulta-info {
+  margin-bottom: 1.3em;
+  width: 100%;
+  padding: 1.3em 0;
+  background-color: var(--branco-claro);
+  border-radius: 0.7em;
+  display: flex;
+  flex-direction: column;
+}
+
+.divisoria__dados-consulta {
+  margin: 0.9em 0 0.6em 0;
+  height: 0.1px;
+  box-shadow: 1px 0 0 0 var(--cinza-texto-detalhe);
+  border: none;
+}
+
+.consulta-info__paciente {
+  margin: 0 1.3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.dados__consulta {
+  margin-right: auto;
+  padding-left: 1em;
+}
+
+.nome__paciente {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.icone-camera {
+  margin-right: 0.5em;
+}
+
+.botao__chat {
+  background-color: transparent;
+  border: none;
+}
+
+.tipo-consulta__texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  color: var(--cinza-texto-detalhe);
+}
+
+.consulta-info__atendimento {
+  margin: 0 1.3em;
+}
+
+.hora__consulta {
+  margin: 0.6em;
+}
+
+.div__botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botao__ligacao {
+  width: 48%;
+  font: var(--fonte-padrao);
+  font-size: 14px;
+  background-color: transparent;
+  border: 0.2em solid var(--branco-tela-fundo);
+  padding: 0.9em 1em;
+  border-radius: 0.6em;
+}
+
+.ligacao-video {
+  border: none;
+  color: var(--branco-claro);
+  background-color: var(--amarelo-botao);
+}
+
+
+.botao__ver-endereço {
+  width: 100%;
+  color: var(--branco-claro);
+  font-size: 14px;
+  background-color: var(--azul-botao);
+  border: none;
+  padding: 0.9em 1em;
+  border-radius: 0.6em;
+}
