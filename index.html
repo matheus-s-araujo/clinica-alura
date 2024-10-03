@@ -27,14 +27,17 @@
         <div class="consulta-info">
           <div class="consulta-info__paciente">
             <img src="./img/Perfil 1.svg" alt="Foto de perfil do paciente" />
-            <div>
+            <div class="dados__consulta">
               <h2 class="nome__paciente">Luciana Dias</h2>
               <span class="tipo-consulta__texto"
-                ><img src="./img/Camera.svg" alt="ìcone de câmera" />Consulta
-                remota</span
+                ><img
+                  class="icone-camera"
+                  src="./img/Camera.svg"
+                  alt="ìcone de câmera"
+                />Consulta remota</span
               >
             </div>
-            <button>
+            <button class="botao__chat">
               <img src="./img/Bate-papo.svg" alt="Imagem do ícone para chat" />
             </button>
           </div>
@@ -43,8 +46,12 @@
 
           <div class="consulta-info__atendimento">
             <p class="hora__consulta">14:00 - 15:00 (1 hora)</p>
-            <button>Ligar por vídeo</button>
-            <button>Ligar por áudio</button>
+            <div class="div__botoes">
+              <button class="botao__ligacao ligacao-video">
+                Ligar por vídeo
+              </button>
+              <button class="botao__ligacao">Ligar por áudio</button>
+            </div>
           </div>
         </div>
       </div>

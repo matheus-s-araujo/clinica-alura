@@ -18,7 +18,7 @@
   width: 100%;
   margin-top: 0.6em;
   padding: 1.3em 0;
-  background-color: var(--branco-tela-consulta);
+  background-color: var(--branco-claro);
   border-radius: 0.7em;
   display: flex;
   flex-direction: column;
@@ -30,14 +30,30 @@ hr {
 
 .consulta-info__paciente {
   margin: 0 1.3em;
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.dados__consulta {
+  margin-right: auto;
+  padding-left: 1em;
 }
 
 .nome__paciente {
   font-size: 14px;
   font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.icone-camera {
+  margin-right: 0.5em;
+}
+
+.botao__chat {
+  background-color: transparent;
+  border: none;
 }
 
 .tipo-consulta__texto {
@@ -47,4 +63,28 @@ hr {
 
 .consulta-info__atendimento {
   margin: 0 1.3em;
+}
+
+.hora__consulta {
+  margin: 0.6em;
+}
+
+.div__botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botao__ligacao {
+  font: var(--fonte-padrao);
+  font-size: 14px;
+  background-color: transparent;
+  border: 0.2em solid var(--branco-tela-fundo);
+  padding: 0.9em 1.1em;
+  border-radius: 0.6em;
+}
+
+.ligacao-video {
+  border: none;
+  color: var(--branco-claro);
+  background-color: var(--amarelo-botao);
 }
