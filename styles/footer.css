@@ -1,0 +1,51 @@
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10em;
+}
+
+.rodape__flutuante {
+  background-color: transparent;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.botao-flutuante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: 7em;
+  width: 7em;
+}
+
+.rodape__menu {
+  background-color: var(--branco-claro);
+  border: none;
+  border-radius: 2em 2em 0 0;
+  padding: 0.7em 0;
+}
+
+.rodape__lista {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rodape__opcao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape__opcao-texto {
+  text-decoration: none;
+  color: var(--preto-texto-destaque);
+  font-weight: 400;
+}

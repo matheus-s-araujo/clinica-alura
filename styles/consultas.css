@@ -28,9 +28,8 @@
 
 .divisoria__dados-consulta {
   margin: 0.9em 0 0.6em 0;
-  height: 1px;
-  box-shadow: 1px 0 0 0 var(--cinza-texto-detalhe);
-  border: none;
+  border: 0;
+  border-top: 1px solid var(--cinza-texto-detalhe);
 }
 
 .consulta-info__paciente {
