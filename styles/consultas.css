@@ -2,11 +2,11 @@
   padding: 0.7em 1.3em 0.7em 1.3em;
 }
 
-.hoje {
+.dia {
   display: inline-block;
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 0.8em;
+  margin-left: 1.3em;
 }
 
 .consultas__hoje {
@@ -91,10 +91,15 @@
   border-radius: 0.6em;
 }
 
-.ligacao-video {
+.botao__ligacao-video {
+  width: 48%;
+  font: var(--fonte-padrao);
+  font-size: 14px;
   border: none;
   color: var(--branco-claro);
   background-color: var(--amarelo-botao);
+  padding: 0.9em 1em;
+  border-radius: 0.6em;
 }
 
 
@@ -106,4 +111,17 @@
   border: none;
   padding: 0.9em 1em;
   border-radius: 0.6em;
+}
+
+@media screen and (min-width: 768px) {
+  .container__consultas {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .botao__ver-endereço {
+    padding: 1.4em 1.5em;
+
+  }
 }
