@@ -1,5 +1,5 @@
 .header__usuario {
-  padding: 2.6em 10em 1.8em 1em;
+  padding: 2.6em 10em 1.8em 1.4em;
   display: flex;
   align-items: center;
   gap: 1.3em;
@@ -8,6 +8,7 @@
 .boas-vindas__usuario {
   font-size: 22px;
   font-weight: 700;
+  margin-bottom: 0.5em;
 }
 
 .quantidade__consultas {
