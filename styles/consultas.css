@@ -121,17 +121,30 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-items: stretch;
     padding: 0.8em 3em;
     gap: 3em;
     margin-bottom: 1.5em;
   }
 
-  .botao__ver-endereço {
-    padding: 1.4em 1.5em;
-  }
-
   .consulta-info {
     margin-bottom: 0;
+    flex: 1 1 10em;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .consulta-info__atendimento {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  .botao__ver-endereço {
+    height: 100%;
+    flex-grow: 2;
   }
 }
