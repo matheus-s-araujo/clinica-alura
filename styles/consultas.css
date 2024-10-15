@@ -112,7 +112,7 @@
   border-radius: 0.6em;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .dia {
     margin-left: 2.2em;
   }
@@ -121,30 +121,54 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: stretch;
     padding: 0.8em 3em;
-    gap: 3em;
+    gap: 3.3em;
     margin-bottom: 1.5em;
   }
 
   .consulta-info {
+    width: 27.4em;
     margin-bottom: 0;
-    flex: 1 1 10em;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+  }
+}
+
+  @media screen and (min-width: 1024px) {
+  .dia {
+    margin-left: 1.5em;
   }
 
-  .consulta-info__atendimento {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    box-sizing: border-box;
-    height: 100%;
+  .container__consultas {
+    padding: 4em 4.5em;
+    gap: 3.3em 5.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .consulta-info {
+    width: 33.4em;
+    margin-bottom: 0;
+  }
+
+  .foto-perfil__paciente {
+    height: 3.5em;
+    width: 3.5em;
+  }
+  .nome__paciente {
+    font-size: 18px;
+  }
+
+  .hora__consulta {
+    font-size: 14px;
+  }
+
+  .botao__ligacao {
+    font-size: 16px;
+  }
+
+  .botao__ligacao-video {
+    font-size: 16px;
   }
 
   .botao__ver-endereço {
-    height: 100%;
-    flex-grow: 2;
+    font-size: 16px;
   }
 }

@@ -16,3 +16,21 @@
   font-weight: 400;
   color: var(--cinza-texto-detalhe);
 }
+
+@media screen and (min-width: 1024px) {
+  .header__usuario {
+    padding: 2.6em 10em 2.6em 2em;
+  }
+  .foto-perfil__usuario {
+    height: 8em;
+    width: 8em;
+  }
+
+  .boas-vindas__usuario {
+    font-size: 31px;
+  }
+
+  .quantidade__consultas {
+    font-size: 18px;
+  }
+}
