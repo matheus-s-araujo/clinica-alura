@@ -112,7 +112,7 @@
   border-radius: 0.6em;
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   .dia {
     margin-left: 2.2em;
   }
@@ -127,12 +127,12 @@
   }
 
   .consulta-info {
-    width: 27.4em;
+    width: 27em;
     margin-bottom: 0;
   }
 }
 
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .dia {
     margin-left: 1.5em;
   }
@@ -140,7 +140,10 @@
   .container__consultas {
     padding: 4em 4.5em;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de tamanho igual */
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Define 3 colunas de tamanho igual */
     grid-gap: 3.3em 5.5em;
   }
 
