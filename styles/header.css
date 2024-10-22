@@ -19,7 +19,10 @@
 
 @media screen and (min-width: 1024px) {
   .header__usuario {
+    
     padding: 2.6em 10em 2.6em 2em;
+    width: 100%;
+    height: 100%;
   }
   .foto-perfil__usuario {
     height: 8em;

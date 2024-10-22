@@ -1,6 +1,7 @@
 @import url(styles/header.css);
 @import url(styles/consultas.css);
 @import url(styles/footer.css);
+@import url(styles/aside.css);
 
 :root {
   --amarelo-botao: #ffb050;
@@ -12,6 +13,10 @@
   --fonte-padrao: "Montserrat";
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--branco-tela-fundo);
   font-family: var(--fonte-padrao);
@@ -19,6 +24,6 @@ body {
   font-weight: 500;
   color: var(--preto-texto-destaque);
   padding-bottom: 4em;
+  width: 100vw;
+  overflow-x: hidden;
 }
-
-
