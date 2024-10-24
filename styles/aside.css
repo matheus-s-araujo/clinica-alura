@@ -5,49 +5,45 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .menu-lateral {
+  .menu-lateral__conteudo {
     position: fixed;
-    max-width: 30em;
-    width: 30em;
+    max-width: var(--espaço-menu-lateral);
+    width: var(--espaço-menu-lateral);
     height: 100vw;
+    background-color: var(--branco-claro);
+    top: 0;
+    border-right: 0.5em solid rgb(201, 200, 200);
   }
 
-  .rodape__menu-lateral {
+  .menu-lateral {
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: var(--branco-claro);
     border: none;
   }
 
   .lista__menu-lateral {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: flex-start;
     gap: 1.5em;
-    padding: 2em 5em 2em 1.7em;
+    padding: 3.5em 0 0 2em;
     width: 100%;
   }
 
-  .rodape__menu-lateral img {
-    width: 1.8em;
-    height: 1.8em;
-  }
-
-  .menu-lateral__opcao {
-    display: flex;
-    flex-direction: row;
+  .menu-lateral img {
+    width: 1.7em;
+    height: 1.7em;
   }
 
   .menu-lateral__opcao-texto {
     display: flex;
-    flex-direction: row;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     gap: 1em;
     text-decoration: none;
     color: var(--preto-texto-destaque);
     font-weight: 400;
+    align-items: center;
   }
 }

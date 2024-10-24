@@ -11,10 +11,19 @@
   --branco-tela-fundo: #ececec;
   --branco-claro: #ffffff;
   --fonte-padrao: "Montserrat";
+  --espaço-menu-lateral: 20em;
 }
 
 * {
   box-sizing: border-box;
+}
+
+header, 
+aside, 
+section, 
+body,
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -25,5 +34,4 @@ body {
   color: var(--preto-texto-destaque);
   padding-bottom: 4em;
   width: 100vw;
-  overflow-x: hidden;
 }

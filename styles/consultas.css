@@ -138,8 +138,8 @@
 
 @media screen and (min-width: 1024px) {
   .conteudo__pagina {
-    width: calc(100% - 30em);
-    margin-left: 30em;
+    width: calc(100% - var(--espaço-menu-lateral));
+    margin-left: var(--espaço-menu-lateral);
   }
 
   .dia {
