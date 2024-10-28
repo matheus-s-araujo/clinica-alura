@@ -5,6 +5,11 @@
   right: 0;
 }
 
+.botoes-flutuantes__config {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .botao-flutuante__opcoes {
   width: 5em;
   height: 6em;
@@ -17,28 +22,16 @@
 
 .botao-flutuante__input:checked ~ .botao-flutuante > .botao-flutuante__opcoes {
   background-image: url(../img/Botão\ flutuante\ Aberto.svg);
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: relative;
 }
 
 .botao-flutuante__input {
   display: none;
 }
 
-.botoes-flutuantes__config {
-  display: none;
-}
-
-.botao-flutuante__input:checked ~ .botoes-flutuantes__config {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
 .botoes-flutuantes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
+  display: none;
 }
 
 .botao-flutuante__consulta-local {
@@ -70,7 +63,28 @@
   padding: 0 0.8em;
 }
 
-.botao-flutuante__input:checked ~ .botoes-flutuantes__config {
+.botao-flutuante__input:checked ~ .botoes-flutuantes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+  z-index: 2;
+  position: relative;
+}
+
+.overlay-escuro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; /* Inicia oculta */
+  z-index: 1; /* Ajuste este valor se houver conflito com outros elementos */
+}
+
+/* Exibir a camada escura quando o checkbox estiver marcado */
+.botao-flutuante__input:checked ~ .overlay-escuro {
   display: block;
 }
 
@@ -110,6 +124,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .botao-flutuante__opcoes {
+    display: none;
+  }
+
   .rodape__lista {
     padding: 0 15em;
   }
