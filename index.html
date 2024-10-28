@@ -525,11 +525,28 @@
     </section>
 
     <footer class="rodape">
-      <div class="rodape__flutuante">
-        <button class="botao-flutuante">
-          <img src="./img/Botão flutuante.svg" alt="" />
-        </button>
+      <div class="botoes-flutuantes__config">
+        <label for="botao-flutuante__config" class="botoes-flutuantes">
+          <p class="consulta-local__texto">Nova consulta na casa do paciente</p>
+          <span class="botao-flutuante__consulta-local"></span
+        ></label>
+        <label for="botao-flutuante__config" class="botoes-flutuantes">
+          <p class="consulta-video__texto">Nova consulta por vídeo</p>
+          <span class="botao-flutuante__consulta-video"></span>
+        </label>
       </div>
+      <input
+        type="checkbox"
+        id="botao-flutuante__config"
+        class="botao-flutuante__input"
+      />
+      <label for="botao-flutuante__config" class="botao-flutuante">
+        <span class="botao-flutuante__opcoes"></span>
+      </label>
+
+      <ul class="menu-flutuante">
+        <li class="menu-flutuante__item"></li>
+      </ul>
       <div class="rodape__menu">
         <ul class="rodape__lista">
           <li class="rodape__opcao">
