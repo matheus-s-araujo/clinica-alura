@@ -20,12 +20,6 @@
   display: inline-block;
 }
 
-.botao-flutuante__input:checked ~ .botao-flutuante > .botao-flutuante__opcoes {
-  background-image: url(../img/Botão\ flutuante\ Aberto.svg);
-  z-index: 2;
-  position: relative;
-}
-
 .botao-flutuante__input {
   display: none;
 }
@@ -72,6 +66,12 @@
   position: relative;
 }
 
+.botao-flutuante__input:checked ~ .botao-flutuante > .botao-flutuante__opcoes {
+  background-image: url(../img/Botão\ flutuante\ Aberto.svg);
+  z-index: 2;
+  position: relative;
+}
+
 .overlay-escuro {
   position: fixed;
   top: 0;
@@ -79,11 +79,10 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none; /* Inicia oculta */
-  z-index: 1; /* Ajuste este valor se houver conflito com outros elementos */
+  display: none;
+  z-index: 1; 
 }
 
-/* Exibir a camada escura quando o checkbox estiver marcado */
 .botao-flutuante__input:checked ~ .overlay-escuro {
   display: block;
 }
@@ -99,6 +98,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  
 }
 
 .rodape__opcao {

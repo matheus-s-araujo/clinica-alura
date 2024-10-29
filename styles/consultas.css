@@ -23,6 +23,7 @@
 .consulta-info {
   margin-bottom: 1.3em;
   width: 100%;
+  max-width: 35em;
   padding: 1.3em 0;
   background-color: var(--branco-claro);
   border-radius: 0.7em;
