@@ -124,7 +124,7 @@
 
   .container__consultas {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 3.3em;
     padding: 0.8em 3em;
@@ -132,8 +132,18 @@
   }
 
   .consulta-info {
-    width: 27em;
+    min-width: 27em;
+    max-width: 30em;
+    height: 16.7em;
     margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .consulta-info__atendimento {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
   }
 }
 
@@ -149,14 +159,22 @@
 
   .container__consultas {
     padding: 4em 4.5em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3.3em 5.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.3em 5.5em;
   }
 
   .consulta-info {
-    width: 33.4em;
+    min-width: 33.4em;
+    min-height: 15.5em;
     margin-bottom: 0;
+  }
+
+  .consulta-info__atendimento {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
   }
 
   .foto-perfil__paciente {
