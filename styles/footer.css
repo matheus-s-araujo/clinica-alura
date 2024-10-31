@@ -5,6 +5,12 @@
   right: 0;
 }
 
+.botao-flutuante {
+  width: 5em;
+  height: 6em;
+  margin-left: calc(100% - 5em);
+}
+
 .botoes-flutuantes__config {
   display: flex;
   flex-direction: column-reverse;

@@ -524,9 +524,60 @@
       </section>
     </section>
 
+    <form action="">
+      <div>
+        <label for="form__nome-paciente">Nome do paciente</label>
+        <input
+          type="text"
+          name="form__nome-paciente"
+          id="form__nome-paciente"
+          required
+        />
+      </div>
+
+      <fieldset>
+        <div>
+          <label for="form__tipo-consulta">Tipo da consulta</label>
+          <select name="form__tipo-consulta" id="form__tipo-consulta" required>
+            <option selected disabled value="">Selecione uma opção</option>
+            <option value="consulta-local">Consulta no local</option>
+            <option value="consulta-video">Consulta por vídeo</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="form__data-consulta">Data da con nsulta</label>
+          <input type="date" id="form__data-consulta" required />
+        </div>
+
+        <div>
+          <label for="form__horario-consulta">Horário da consulta</label>
+          <input
+            type="datetime"
+            name="form__data-consulta"
+            id="form__data-consulta"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <label for="form__observacoes-consulta">Observações</label>
+      <input
+        type="text"
+        name="form__observacoes-consulta"
+        id="form__observacoes-consulta"
+        required
+      />
+
+      <button class="form__botao" type="submit">Salvar Consulta</button>
+    </form>
     <footer class="rodape">
       <div class="botoes-flutuantes__config">
-        <input type="checkbox" id="botao-flutuante__config" class="botao-flutuante__input"/>
+        <input
+          type="checkbox"
+          id="botao-flutuante__config"
+          class="botao-flutuante__input"
+        />
         <label for="botao-flutuante__config" class="botao-flutuante">
           <span class="botao-flutuante__opcoes"></span>
         </label>
@@ -543,8 +594,7 @@
 
         <div class="overlay-escuro"></div>
       </div>
-      
-      
+
       <ul class="menu-flutuante">
         <li class="menu-flutuante__item"></li>
       </ul>
