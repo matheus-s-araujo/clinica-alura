@@ -2,12 +2,14 @@
 @import url(styles/consultas.css);
 @import url(styles/footer.css);
 @import url(styles/aside.css);
+@import url(styles/formulario.css);
 
 :root {
   --amarelo-botao: #ffb050;
   --azul-botao: #4894ff;
   --preto-texto-destaque: #464646;
   --cinza-texto-detalhe: #a3a3a3;
+  --cinza-desativado: #CFCFCF;
   --branco-tela-fundo: #ececec;
   --branco-claro: #ffffff;
   --fonte-padrao: "Montserrat";

@@ -524,8 +524,10 @@
       </section>
     </section>
 
-    <form action="">
-      <div>
+    <h2 class="form__titulo">Marcar nova consulta</h2>
+
+    <form action="" class="form__consulta">
+      <div class="campo-formulario">
         <label for="form__nome-paciente">Nome do paciente</label>
         <input
           type="text"
@@ -536,7 +538,7 @@
       </div>
 
       <fieldset>
-        <div>
+        <div class="campo-formulario">
           <label for="form__tipo-consulta">Tipo da consulta</label>
           <select name="form__tipo-consulta" id="form__tipo-consulta" required>
             <option selected disabled value="">Selecione uma opção</option>
@@ -545,12 +547,12 @@
           </select>
         </div>
 
-        <div>
+        <div class="campo-formulario">
           <label for="form__data-consulta">Data da con nsulta</label>
           <input type="date" id="form__data-consulta" required />
         </div>
 
-        <div>
+        <div class="campo-formulario">
           <label for="form__horario-consulta">Horário da consulta</label>
           <input
             type="datetime"
@@ -561,16 +563,19 @@
         </div>
       </fieldset>
 
-      <label for="form__observacoes-consulta">Observações</label>
-      <input
-        type="text"
-        name="form__observacoes-consulta"
-        id="form__observacoes-consulta"
-        required
-      />
+      <div class="campo-formulario">
+        <label for="form__observacoes-consulta">Observações</label>
+        <input
+          type="text"
+          name="form__observacoes-consulta"
+          id="form__observacoes-consulta"
+          required
+        />
+      </div>
 
       <button class="form__botao" type="submit">Salvar Consulta</button>
     </form>
+
     <footer class="rodape">
       <div class="botoes-flutuantes__config">
         <input
