@@ -524,56 +524,62 @@
       </section>
     </section>
 
-    <h2 class="form__titulo">Marcar nova consulta</h2>
+    <h2 class="form__titulo">Agendar nova consulta</h2>
 
     <form action="" class="form__consulta">
-      <div class="campo-formulario">
+      <div class="campo-formulario__espaço">
         <label for="form__nome-paciente">Nome do paciente</label>
         <input
           type="text"
           name="form__nome-paciente"
           id="form__nome-paciente"
+          class="campo-formulario__preencher"
+          placeholder="Nome"
           required
         />
       </div>
 
       <fieldset>
-        <div class="campo-formulario">
+        <div class="campo-formulario__espaço">
           <label for="form__tipo-consulta">Tipo da consulta</label>
-          <select name="form__tipo-consulta" id="form__tipo-consulta" required>
+          <select name="form__tipo-consulta" id="form__tipo-consulta" class="campo-formulario__preencher" required>
             <option selected disabled value="">Selecione uma opção</option>
             <option value="consulta-local">Consulta no local</option>
             <option value="consulta-video">Consulta por vídeo</option>
           </select>
         </div>
 
-        <div class="campo-formulario">
-          <label for="form__data-consulta">Data da con nsulta</label>
-          <input type="date" id="form__data-consulta" required />
+        <div class="campo-formulario__espaço">
+          <label for="form__data-consulta">Data da consulta</label>
+          <input type="date" id="form__data-consulta" class="campo-formulario__preencher" required />
         </div>
 
-        <div class="campo-formulario">
+        <div class="campo-formulario__espaço">
           <label for="form__horario-consulta">Horário da consulta</label>
           <input
             type="datetime"
             name="form__data-consulta"
             id="form__data-consulta"
+            class="campo-formulario__preencher"
+            placeholder="Horário"
             required
           />
         </div>
       </fieldset>
 
-      <div class="campo-formulario">
+      <div class="campo-formulario__espaço">
         <label for="form__observacoes-consulta">Observações</label>
         <input
           type="text"
           name="form__observacoes-consulta"
           id="form__observacoes-consulta"
+          class="campo-formulario__preencher"
+          placeholder="Observações"
           required
         />
       </div>
 
-      <button class="form__botao" type="submit">Salvar Consulta</button>
+      <button class="form__botao" type="submit">Marcar Consulta</button>
     </form>
 
     <footer class="rodape">
