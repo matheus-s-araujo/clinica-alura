@@ -149,8 +149,12 @@
 
 @media screen and (min-width: 1024px) {
   .conteudo__pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: calc(100% - var(--espaço-menu-lateral));
     margin-left: var(--espaço-menu-lateral);
+    padding: 0 20em 0 20em;
   }
 
   .dia {
@@ -163,6 +167,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 3.3em 5.5em;
+    max-width: 150em;
   }
 
   .consulta-info {

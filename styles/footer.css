@@ -134,6 +134,10 @@
     display: none;
   }
 
+  .botoes-flutuantes__config {
+    display: none;
+  }
+
   .rodape__lista {
     padding: 0 15em;
   }

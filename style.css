@@ -38,3 +38,9 @@ body {
   padding-bottom: 4em;
   width: 100vw;
 }
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 0;
+  }
+}
