@@ -73,10 +73,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .form__titulo {
-    width: calc(100% - var(--espaço-menu-lateral));
-    margin-left: var(--espaço-menu-lateral);
-  }
+  
 
   .form__consulta {
     width: calc(100% - var(--espaço-menu-lateral));

@@ -524,7 +524,9 @@
       </section>
     </section>
 
-    <h2 class="form__titulo">Agendar nova consulta</h2>
+    <div class="form__titulo">
+      <h2>Agendar nova consulta</h2>
+    </div>
 
     <form action="" class="form__consulta">
       <div class="campo-formulario__espaço">
@@ -568,14 +570,7 @@
 
       <div class="campo-formulario__espaço">
         <label for="form__observacoes-consulta">Observações</label>
-        <input
-          type="text"
-          name="form__observacoes-consulta"
-          id="form__observacoes-consulta"
-          class="campo-formulario__preencher"
-          placeholder="Observações"
-          required
-        />
+        <textarea type="text" name="form__observacoes-consulta" id="form__observacoes-consulta" class="campo-formulario__preencher" placeholder="Observações" required></textarea>
       </div>
 
       <button class="form__botao" type="submit">Marcar Consulta</button>
