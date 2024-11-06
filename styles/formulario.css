@@ -26,10 +26,9 @@
     flex-wrap: wrap;
     gap: 1em;
     align-items: center;
-    height: 30em;
-    max-height: 35em;
-    margin-bottom: 3em;
-    padding: 0 7.5em 0 7.5em;
+    height: 36em;
+    max-height: 100em;
+    padding: 0 5.5em 0 5.5em;
   }
 
   .campo-formulario__espaço {
@@ -37,7 +36,7 @@
     flex-direction: column;
     gap: 1em;
     margin-bottom: 1em;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
   }
 
@@ -49,7 +48,11 @@
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     background-color: var(--branco-claro);
     width: 25em;
-    height: 4em;
+    height: 4.5em;
+  }
+
+  .campo-formulario__preencher::placeholder {
+    font-size: 15px;
   }
 
   .campo-formulario__preencher:focus {
@@ -63,21 +66,39 @@
     justify-content: center;
     align-items: center;
     border: none;
-    border-radius: 0.8em;
-    padding: 1.5em;
+    border-radius: 0.6em;
+    padding: 0.9em 1em;
+    width: 20em;
+    height: 3em;
     margin-top: auto;
-    margin-bottom: 2em;
-    width: 25em;
-    height: 4em;
+    margin-bottom: 3.5em;
+    font-size: 14px;
+  }
+
+  #form__observacoes-consulta {
+    max-width: 38em;
+    min-height: 28em;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  
-
   .form__consulta {
+    height: 40em;
     width: calc(100% - var(--espaço-menu-lateral));
     margin-left: var(--espaço-menu-lateral);
     padding: 0 20em 3em 20em;
+  }
+
+  #form__observacoes-consulta {
+    max-width: 50em;
+    min-width:  50em;
+    min-height: 15em;
+    max-height: 27em;
+  }
+
+  .form__botao {
+    width: 23em;
+    height: 3em;
+    margin-bottom: 4em;
   }
 }

@@ -9,7 +9,7 @@
     position: fixed;
     max-width: var(--espaço-menu-lateral);
     width: var(--espaço-menu-lateral);
-    height: 100vw;
+    height: 100%;
     background-color: var(--branco-claro);
     top: 0;
     border-right: 0.5em solid rgb(201, 200, 200);

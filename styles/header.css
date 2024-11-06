@@ -21,7 +21,7 @@
   .header__usuario {
     width: calc(100% - var(--espaço-menu-lateral));
     margin-left: var(--espaço-menu-lateral);
-    padding: 2.6em 10em 2.6em 2em;
+    padding: 2.6em 10em 2.6em 4em;
     width: 100%;
     height: 100%;
   }
