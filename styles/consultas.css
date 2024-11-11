@@ -3,7 +3,7 @@
 }
 
 .container__consultas {
-  padding: 0.7em 1.3em 0.7em 1.3em;
+  padding: 0.7em 1.5em 0.7em 1.5em;
 }
 
 .dia {
@@ -151,10 +151,13 @@
   .conteudo__pagina {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     width: calc(100% - var(--espaço-menu-lateral));
+    min-width: 100em;
+    max-width: 220em;
     margin-left: var(--espaço-menu-lateral);
-    padding: 0 10em 0 12em;
+    padding: 0 8.5em 0 10em;
   }
 
   .dia {
@@ -163,15 +166,17 @@
   }
 
   .container__consultas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(33.4em, 1fr));
+    gap: 3em; 
     padding: 4em 3em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 145em;
+    justify-items: start;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .consulta-info {
-    min-width: 33.4em;
+    min-width: 30em;
     min-height: 15.5em;
     margin-bottom: 0;
   }

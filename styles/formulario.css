@@ -71,7 +71,7 @@
     width: 15em;
     height: 3em;
     font-size: 16px;
-    margin-top: 1.7em;
+    margin-top: 1.2em;
   }
 
   #form__observacoes-consulta {
@@ -92,14 +92,20 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .form__titulo {
+    margin-left: 5em;
+    max-width: 147em;
+  }
+
   .form__consulta {
     justify-content: space-evenly;
-    max-height: 40em;
+    max-height: 43em;
     width: calc(100% - var(--espaço-menu-lateral));
+    max-width: 220em;
     margin-left: var(--espaço-menu-lateral);
     margin-bottom: 0;
-    padding: 0 13em 3em 15em;
-    gap: 1em 3.5em;
+    padding: 0 11.5em 4em 13.5em;
+    gap: 1.5em 3.5em;
   }
 
   .campo-formulario__preencher {
@@ -122,14 +128,14 @@
   #form__observacoes-consulta {
     max-width: 45em;
     min-width: 45em;
-    max-height: 28em;
+    max-height: 21.5em;
   }
 
   .form__botao {
     width: 23em;
     height: 3.5em;
     font-size: 16px;
-    margin-bottom: 1em;
+    margin: 0 0 0.8em 0;
     cursor: pointer;
   }
 
