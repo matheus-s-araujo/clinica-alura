@@ -34,13 +34,18 @@
               ><img
                 src="./img/Calendário icone.svg"
                 alt="Ícone do Calendário"
+                class="menu-svg"
               />
               <p>Consultas</p></a
             >
           </li>
           <li class="menu-lateral__opcao">
             <a class="menu-lateral__opcao-texto" href="#"
-              ><img src="./img/Clientes icone.svg" alt="Ícone dos Clientes" />
+              ><img
+                src="./img/Clientes icone.svg"
+                alt="Ícone dos Clientes"
+                class="menu-svg"
+              />
               <p>Clientes</p></a
             >
           </li>
@@ -49,13 +54,18 @@
               ><img
                 src="./img/Relatórios icone.svg"
                 alt="Ícone dos Relatórios"
+                class="menu-svg"
               />
               <p>Relatórios</p></a
             >
           </li>
           <li class="menu-lateral__opcao">
             <a class="menu-lateral__opcao-texto" href="#"
-              ><img src="./img/Menu icone.svg" alt="Ícone do menu" />
+              ><img
+                src="./img/Menu icone.svg"
+                alt="Ícone do menu"
+                class="menu-svg"
+              />
               <p>Menu</p></a
             >
           </li>
@@ -448,7 +458,7 @@
         </div>
       </section>
     </section>
-   
+
     <h2 class="form__titulo">Agendar nova consulta</h2>
 
     <form action="" class="form__consulta">
@@ -461,13 +471,22 @@
           class="campo-formulario__preencher"
           placeholder="Nome"
           required
+          pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+"
+          title="Por favor, insira apenas letras."
         />
       </div>
 
       <div class="campo-formulario__espaço">
         <label for="form__tipo-consulta">Tipo da consulta</label>
-        <select name="form__tipo-consulta" id="form__tipo-consulta" class="campo-formulario__preencher" required>
-          <option selected disabled value="">Selecione uma opção</option>
+        <select
+          name="form__tipo-consulta"
+          id="form__tipo-consulta"
+          class="campo-formulario__preencher"
+          required
+        >
+          <option class="option-placeholder" selected disabled value="">
+            Selecione uma opção
+          </option>
           <option value="consulta-local">Consulta no local</option>
           <option value="consulta-video">Consulta por vídeo</option>
         </select>
@@ -475,25 +494,34 @@
 
       <div class="campo-formulario__espaço">
         <label for="form__data-consulta">Data da consulta</label>
-        <input type="date" id="form__data-consulta" class="campo-formulario__preencher" required />
+        <input
+          type="date"
+          id="form__data-consulta"
+          class="campo-formulario__preencher"
+          required
+        />
       </div>
 
       <div class="campo-formulario__espaço">
         <label for="form__horario-consulta">Horário da consulta</label>
         <input
-          type="datetime"
-          name="form__data-consulta"
-          id="form__data-consulta"
+          type="time"
+          name="form__horario-consulta"
+          id="form__horario-consulta"
           class="campo-formulario__preencher"
           placeholder="Horário"
           required
         />
       </div>
 
-
       <div class="campo-formulario__espaço">
         <label for="form__observacoes-consulta">Observações</label>
-        <textarea type="text" name="form__observacoes-consulta" id="form__observacoes-consulta" required></textarea>
+        <textarea
+          type="text"
+          name="form__observacoes-consulta"
+          id="form__observacoes-consulta"
+          required
+        ></textarea>
       </div>
 
       <button class="form__botao" type="submit">Marcar Consulta</button>

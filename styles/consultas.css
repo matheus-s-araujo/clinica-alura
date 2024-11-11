@@ -196,13 +196,46 @@
 
   .botao__ligacao {
     font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(--branco-tela-fundo);
   }
 
   .botao__ligacao-video {
     font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(--amarelo-botao)
   }
 
   .botao__ver-endereço {
     font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(--azul-botao)
+  }
+
+  .botao__ligacao:hover{
+    background-color: var(--preto-texto-destaque);
+    color: var(--branco-claro);
+    border: 1px solid var(--cinza-texto-detalhe);
+  }
+
+  .botao__ligacao-video:hover{
+    background-color: var(--branco-claro);
+    color: var(--amarelo-botao);
+    border: 1px solid var(--amarelo-botao);
+  }
+
+  .botao__ver-endereço:hover{
+    background-color: var(--branco-claro);
+    color: var(--azul-botao);
+    border: 1px solid var(--azul-botao);
+  }
+
+  .menu-lateral__opcao-texto {
+    filter: grayscale(100%);
+    transition: filter 0.1s ease-in-out;
+  }
+
+  .menu-lateral__opcao-texto:hover {
+    filter: invert(34%) sepia(90%) saturate(2494%) hue-rotate(186deg) brightness(99%) contrast(102%);
   }
 }
